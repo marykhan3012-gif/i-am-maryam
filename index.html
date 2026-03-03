@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering Maryam Khan</title>
+    <title>Maryam Khan's Web App</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
             margin: 0;
             padding: 0;
-        }
-
-        header {
-            background: linear-gradient(135deg, #ff6f61, #ffccbc);
-            padding: 20px;
-            text-align: center;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             color: white;
-            font-size: 2em;
         }
-
-        main {
-            padding: 20px;
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
+            animation: fadeIn 2s ease 1;
         }
-
-        .mountain {
-            background-image: url('path_to_your_mountain_image.jpg'); /* Add a suitable mountain image URL */
-            height: 300px;
-            background-size: cover;
-            position: relative;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-
-        .empowering-message {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(255, 255, 255, 0.8);
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            padding: 10px;
-            font-size: 1.2em;
-        }
-
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #ffccbc;
-            color: #333;
-            font-size: 1em;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 200px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
-
 <body>
-
-    <header>
-        🌟 Empowering Maryam Khan 🌟
-    </header>
-
-    <main>
-        <div class="mountain">
-            <div class="empowering-message">
-                "Embrace your journey, create your path!" 💪✨
-            </div>
+    <div class="hero">
+        <h1>Welcome to Maryam Khan's Web App</h1>
+        <p>A bold, impressive web experience.</p>
+    </div>
+    <div class="features">
+        <div class="feature-card">
+            <h2>Feature 1</h2>
+            <p>Description of feature 1</p>
         </div>
-        <p>Welcome to my creative space! Here I share my journey as a female creator.</p>
-    </main>
-
-    <footer>
-        © 2026 Maryam Khan – all rights reserved. 💖
-    </footer>
-
+        <div class="feature-card">
+            <h2>Feature 2</h2>
+            <p>Description of feature 2</p>
+        </div>
+        <div class="feature-card">
+            <h2>Feature 3</h2>
+            <p>Description of feature 3</p>
+        </div>
+    </div>
 </body>
-
 </html>
