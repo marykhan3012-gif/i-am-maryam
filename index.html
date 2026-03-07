@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maryam Khan - Empowering Journey</title>
+    <title>Maryam Khan - Happy Holidays 🎄</title>
     <style>
         * {
             margin: 0;
@@ -13,10 +13,50 @@
 
         body {
             font-family: 'Poppins', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background: linear-gradient(135deg, #0d3b1e 0%, #b22222 50%, #c8960c 100%);
             color: #333;
             overflow-x: hidden;
             min-height: 100vh;
+        }
+
+        /* Snowflake overlay */
+        .snowflakes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -2em;
+            color: #fff;
+            font-size: 1.2em;
+            user-select: none;
+            animation: snowfall linear infinite;
+            opacity: 0.85;
+        }
+
+        .snowflake:nth-child(1)  { left:  5%; font-size: 1.0em; animation-duration: 8s;  animation-delay: 0s; }
+        .snowflake:nth-child(2)  { left: 12%; font-size: 1.4em; animation-duration: 11s; animation-delay: 2s; }
+        .snowflake:nth-child(3)  { left: 20%; font-size: 0.9em; animation-duration: 9s;  animation-delay: 1s; }
+        .snowflake:nth-child(4)  { left: 30%; font-size: 1.3em; animation-duration: 12s; animation-delay: 3s; }
+        .snowflake:nth-child(5)  { left: 40%; font-size: 1.1em; animation-duration: 10s; animation-delay: 0.5s; }
+        .snowflake:nth-child(6)  { left: 50%; font-size: 1.5em; animation-duration: 8s;  animation-delay: 1.5s; }
+        .snowflake:nth-child(7)  { left: 60%; font-size: 0.8em; animation-duration: 13s; animation-delay: 2.5s; }
+        .snowflake:nth-child(8)  { left: 70%; font-size: 1.2em; animation-duration: 9s;  animation-delay: 0.8s; }
+        .snowflake:nth-child(9)  { left: 80%; font-size: 1.0em; animation-duration: 11s; animation-delay: 3.5s; }
+        .snowflake:nth-child(10) { left: 90%; font-size: 1.4em; animation-duration: 10s; animation-delay: 1.2s; }
+        .snowflake:nth-child(11) { left: 95%; font-size: 0.9em; animation-duration: 8s;  animation-delay: 4s; }
+        .snowflake:nth-child(12) { left: 25%; font-size: 1.1em; animation-duration: 14s; animation-delay: 2s; }
+
+        @keyframes snowfall {
+            0%   { transform: translateY(0) rotate(0deg);   opacity: 0.85; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0.3; }
         }
 
         /* Hero Section */
@@ -27,17 +67,17 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background: linear-gradient(160deg, #0d3b1e 0%, #145a32 40%, #b22222 80%, #c8960c 100%);
         }
 
-        /* Animated Mountains Background */
+        /* Snowy Mountains Background */
         .mountains-back {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
             height: 400px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23C9627D;stop-opacity:0.8" /><stop offset="100%" style="stop-color:%23A0546F;stop-opacity:1" /></linearGradient></defs><polygon points="0,200 300,80 600,200 900,120 1200,200 1200,400 0,400" fill="url(%23grad1)" /></svg>') no-repeat center bottom;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23145a32;stop-opacity:0.9"/><stop offset="100%" style="stop-color:%230d3b1e;stop-opacity:1"/></linearGradient></defs><polygon points="0,200 300,60 600,200 900,100 1200,200 1200,400 0,400" fill="url(%23g1)"/><polygon points="280,60 300,40 320,60" fill="white" opacity="0.9"/><polygon points="580,200 600,175 620,200" fill="white" opacity="0.9"/><polygon points="880,100 900,75 920,100" fill="white" opacity="0.9"/></svg>') no-repeat center bottom;
             background-size: cover;
             z-index: 1;
             animation: slideUp 10s ease-in-out infinite;
@@ -49,7 +89,7 @@
             left: 0;
             width: 100%;
             height: 350px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350"><polygon points="0,150 200,50 400,150 600,80 800,160 1000,90 1200,150 1200,350 0,350" fill="%23A0546F" opacity="0.95" /></svg>') no-repeat center bottom;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350"><polygon points="0,150 200,40 400,150 600,70 800,155 1000,80 1200,150 1200,350 0,350" fill="%230d3b1e" opacity="0.97"/><polygon points="185,40 200,18 215,40" fill="white" opacity="0.95"/><polygon points="585,70 600,48 615,70" fill="white" opacity="0.95"/><polygon points="985,80 1000,55 1015,80" fill="white" opacity="0.95"/></svg>') no-repeat center bottom;
             background-size: cover;
             z-index: 2;
             animation: slideUp 12s ease-in-out infinite;
@@ -71,8 +111,8 @@
 
         .hero-content h1 {
             font-size: clamp(2.5rem, 8vw, 5rem);
-            color: white;
-            text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+            color: #fff8e1;
+            text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5), 0 0 20px rgba(200, 150, 12, 0.6);
             margin: 20px 0;
             font-weight: 900;
             letter-spacing: 3px;
@@ -82,8 +122,8 @@
 
         .tagline {
             font-size: clamp(1.2rem, 4vw, 2rem);
-            color: #FFE5EC;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+            color: #ffd700;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
             margin-bottom: 30px;
             font-weight: 600;
             letter-spacing: 1px;
@@ -102,7 +142,7 @@
         .emoji-box {
             font-size: clamp(2.5rem, 6vw, 4rem);
             animation: bounce 2s ease-in-out infinite;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
         }
 
         .emoji-box:nth-child(2) {
@@ -117,28 +157,29 @@
         .cta-button {
             display: inline-block;
             padding: clamp(0.8rem, 2vw, 1.2rem) clamp(1.5rem, 4vw, 2.5rem);
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #b22222 0%, #c8960c 100%);
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-size: clamp(1rem, 2.5vw, 1.2rem);
             font-weight: 700;
-            box-shadow: 0 10px 25px rgba(245, 87, 108, 0.4);
+            box-shadow: 0 10px 25px rgba(178, 34, 34, 0.5);
             transition: all 0.3s ease;
             cursor: pointer;
-            border: none;
+            border: 2px solid rgba(255, 215, 0, 0.5);
             margin-top: 20px;
             animation: slideUp 1s ease-out 0.8s both;
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(245, 87, 108, 0.6);
+            box-shadow: 0 15px 35px rgba(200, 150, 12, 0.6);
+            border-color: #ffd700;
         }
 
         /* Footer Section */
         footer {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background: linear-gradient(135deg, #0d3b1e 0%, #145a32 50%, #b22222 100%);
             color: white;
             padding: clamp(2rem, 5vw, 3.5rem);
         }
@@ -155,21 +196,21 @@
         .footer-item {
             flex: 1;
             min-width: 250px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             padding: clamp(1.5rem, 3vw, 2.5rem);
             border-radius: 20px;
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 215, 0, 0.25);
             text-align: center;
             transition: all 0.3s ease;
             animation: fadeInUp 1s ease-out both;
         }
 
         .footer-item:hover {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.14);
             transform: translateY(-10px);
-            border-color: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-color: rgba(255, 215, 0, 0.6);
+            box-shadow: 0 10px 30px rgba(200, 150, 12, 0.3);
         }
 
         .footer-item:nth-child(1) {
@@ -203,7 +244,7 @@
             font-size: clamp(1.3rem, 3vw, 1.8rem);
             margin-bottom: 12px;
             font-weight: 700;
-            color: #FFE5EC;
+            color: #ffd700;
         }
 
         .footer-item p {
@@ -214,7 +255,7 @@
 
         .footer-bottom {
             text-align: center;
-            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            border-top: 2px solid rgba(255, 215, 0, 0.3);
             padding-top: 30px;
             margin-top: 40px;
             font-size: clamp(0.9rem, 2vw, 1rem);
@@ -347,23 +388,39 @@
 
 <body>
 
+    <!-- Falling Snowflakes -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="mountains-back"></div>
         <div class="mountains-front"></div>
 
         <div class="hero-content">
-            <div class="crown-emoji">👑</div>
+            <div class="crown-emoji">🎄</div>
             <h1>MARYAM KHAN</h1>
-            <p class="tagline">🌟 Strong • Fearless • Inspired 🌟</p>
+            <p class="tagline">🎁 Joyful • Warm • Inspired 🎁</p>
 
             <div class="emoji-container">
-                <span class="emoji-box">💪</span>
-                <span class="emoji-box">✨</span>
-                <span class="emoji-box">🌸</span>
+                <span class="emoji-box">⛄</span>
+                <span class="emoji-box">🎅</span>
+                <span class="emoji-box">🦌</span>
             </div>
 
-            <button class="cta-button" onclick="scrollToFooter()">Discover My Journey</button>
+            <button class="cta-button" onclick="scrollToFooter()">🎄 Celebrate With Me 🎄</button>
         </div>
     </section>
 
@@ -371,24 +428,24 @@
     <footer>
         <div class="footer-content">
             <div class="footer-item">
-                <div class="emoji-icon">🤝</div>
-                <h3>Connect</h3>
-                <p>Build meaningful relationships and collaborate with like-minded individuals passionate about growth and empowerment.</p>
+                <div class="emoji-icon">🎁</div>
+                <h3>Give Joy</h3>
+                <p>Spread holiday cheer and build meaningful connections — because the greatest gift of all is the warmth we share with others.</p>
             </div>
             <div class="footer-item">
-                <div class="emoji-icon">📚</div>
-                <h3>Learn</h3>
-                <p>Expand your knowledge, develop new skills, and discover endless opportunities for personal and professional development.</p>
+                <div class="emoji-icon">⭐</div>
+                <h3>Shine Bright</h3>
+                <p>Like a star atop the Christmas tree, let your light guide others and illuminate every corner of the world around you.</p>
             </div>
             <div class="footer-item">
-                <div class="emoji-icon">🌱</div>
-                <h3>Grow</h3>
-                <p>Transform your dreams into reality through dedication, hard work, and the support of an empowering community.</p>
+                <div class="emoji-icon">🌟</div>
+                <h3>Grow & Glow</h3>
+                <p>A new year brings new possibilities — transform your dreams into reality and let this season be the beginning of your best chapter yet.</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>✨ © 2026 Maryam Khan | All Rights Reserved ✨</p>
-            <p>Built with passion, creativity, and a love for excellence 💖</p>
+            <p>🎄 © 2026 Maryam Khan | Happy Holidays! 🎄</p>
+            <p>Wishing you warmth, joy, and a season full of magic ✨❄️</p>
         </div>
     </footer>
 
